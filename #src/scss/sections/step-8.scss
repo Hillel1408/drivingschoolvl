@@ -1,0 +1,50 @@
+.step-8 {
+    @include adaptiv-value(padding-top, 120, 60, 1);
+    padding-bottom: 120px;
+    background-color: #f4f6f7;
+    background-image: url('../img/bg-7.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    @media (max-width: 1400px) {
+        background-image: none;
+    }
+    @media (max-width: 480px) {
+        padding-bottom: 312px;
+        background-image: url('../img/bg-14.png');
+        background-position: right bottom;
+    }
+    &-block {
+        max-width: 903px;
+        margin-left: auto;
+        @media (max-width: 1400px) {
+            max-width: none;
+        }
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+        p {
+            color: #333;
+        }
+        @media (max-width: 480px) {
+            margin-top: 20px;
+            gap: 20px;
+        }
+    }
+    h3 {
+        font-weight: 900;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #333;
+        @include adaptiv-font(24, 16);
+        margin-top: 40px;
+        span {
+            color: #fecc01;
+        }
+        @media (max-width: 480px) {
+            margin-top: 20px;
+        }
+    }
+}
