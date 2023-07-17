@@ -230,6 +230,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 110px;
   padding: 165px 100px 60px 100px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

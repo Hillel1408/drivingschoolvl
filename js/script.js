@@ -22,6 +22,6 @@ play.forEach((item) => {
         setTimeout(() => {
             this.parentElement.childNodes[3].style.display = 'none';
             this.style.display = 'none';
-        }, 2000);
+        }, 700);
     });
 });
