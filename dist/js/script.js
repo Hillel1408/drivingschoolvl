@@ -6,4 +6,12 @@ const swiper = new Swiper('.reviews__swiper', {
     },
 });
 
+const swiper2 = new Swiper('.video-reviews__swiper', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+});
+
 new CircleType(document.getElementById('demo3'));
+new CircleType(document.getElementById('demo4'));
+
+const player = new Plyr('#player');
