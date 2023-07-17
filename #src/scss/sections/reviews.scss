@@ -1,0 +1,115 @@
+.reviews {
+    padding-top: 102px;
+    padding-bottom: 220px;
+    &__title {
+        margin-bottom: 27px;
+    }
+    &__block {
+        padding: 0 20px 0 186px;
+    }
+    &__swiper {
+        margin-top: 50px;
+        overflow: hidden;
+        box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+
+        border-radius: 60px;
+        &-slide {
+            display: flex;
+            padding: 165px 100px 60px 100px;
+            justify-content: space-between;
+            p {
+                font-size: 30px;
+                line-height: calc(50 / 30 * 100%);
+                color: #2d2f30;
+                font-weight: 300;
+                max-width: 900px;
+                margin-right: 133px;
+                position: relative;
+                margin-top: 60px;
+                &:before,
+                &:after {
+                    content: '“';
+                    font-size: 91px;
+                    line-height: calc(100 / 91 * 100%);
+                    color: #58aee6;
+                    font-weight: 700;
+                    position: absolute;
+                }
+                &:before {
+                    top: -73px;
+                    left: -110px;
+                }
+                &:after {
+                    right: -80px;
+                    bottom: -60px;
+                }
+            }
+            ul {
+                display: flex;
+                gap: 10px;
+                margin-top: 110px;
+                li {
+                    font-size: 30px;
+                    line-height: calc(50 / 30 * 100%);
+                    font-weight: 300;
+                    color: #58aee6;
+                    span {
+                        color: #2d2f30;
+                    }
+                }
+            }
+        }
+    }
+    &__profile {
+        &-avatar {
+            width: 167px;
+            position: relative;
+            margin-bottom: 42px;
+            img {
+                width: 100%;
+                height: 167px;
+                object-fit: cover;
+            }
+            &::before {
+                content: url('../img/icon-1.png');
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+            }
+        }
+        h4 {
+            font-weight: 700;
+        }
+    }
+    &__icon {
+        position: absolute;
+        bottom: -185px;
+        left: 180px;
+        p {
+            font-size: 26px;
+            line-height: calc(36 / 26 * 100%);
+            color: #2d2f30;
+            font-weight: 700;
+            animation: 8s linear 0s normal none infinite running rot;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        padding: 0 96px;
+    }
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
