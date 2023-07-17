@@ -125,6 +125,22 @@ h6 {
   color: #2d2f30;
 }
 
+.video-reviews {
+  background-color: #58aee6;
+  padding-top: 89px;
+  padding-bottom: 61px;
+}
+.video-reviews__title {
+  margin-bottom: 27px;
+  color: white;
+}
+.video-reviews__text {
+  color: white;
+}
+.video-reviews__text span {
+  font-weight: 700;
+}
+
 .reviews {
   padding-top: 102px;
   padding-bottom: 220px;

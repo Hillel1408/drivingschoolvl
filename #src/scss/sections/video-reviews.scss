@@ -1,0 +1,15 @@
+.video-reviews {
+    background-color: #58aee6;
+    padding-top: 89px;
+    padding-bottom: 61px;
+    &__title {
+        margin-bottom: 27px;
+        color: white;
+    }
+    &__text {
+        color: white;
+        span {
+            font-weight: 700;
+        }
+    }
+}
