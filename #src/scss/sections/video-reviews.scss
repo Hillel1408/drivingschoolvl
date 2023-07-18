@@ -3,9 +3,16 @@
     padding-top: 89px;
     padding-bottom: 61px;
     overflow: hidden;
+    @media (max-width: 420px) {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
     &__title {
         margin-bottom: 27px;
         color: white;
+        @media (max-width: 420px) {
+            margin-bottom: 20px;
+        }
     }
     &__text {
         color: white;
@@ -13,14 +20,34 @@
             font-weight: 700;
         }
     }
+    &__block {
+        padding: 0 20px 0 186px;
+        @media (max-width: 950px) {
+            padding: 0;
+        }
+    }
     &__swiper {
         margin: 0 69px;
         margin-top: 50px;
         position: relative;
+        @media (max-width: 1240px) {
+            margin: 0;
+            margin-top: 50px;
+        }
+        @media (max-width: 420px) {
+            overflow: hidden;
+            margin-top: 20px;
+        }
         &-slide {
             width: calc(430.5 / 1782 * 100%);
-            height: 560px;
+            @include adaptiv-value(height, 480, 420, 1);
             position: relative;
+            @media (max-width: 1024px) {
+                width: 240px;
+            }
+            @media (max-width: 420px) {
+                width: 100%;
+            }
             iframe {
                 width: 100%;
                 height: 100%;
@@ -51,8 +78,37 @@
                 transform: translateX(-50%) translateY(-50%);
             }
         }
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            gap: 4px;
+            .swiper-pagination-bullet {
+                background-color: white;
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+                &-active {
+                    background-color: transparent;
+                    position: relative;
+                    padding: 0 9px;
+                    &:before {
+                        content: url('../img/icon-10.png');
+                        position: absolute;
+
+                        top: 50%;
+                        left: 50%;
+                        transform: translateY(-42%) translateX(-50%);
+                    }
+                }
+            }
+        }
         .swiper-wrapper {
             gap: calc(20 / 1782 * 100%);
+            @media (max-width: 1024px) {
+                gap: 0;
+            }
         }
     }
     &__icon {
@@ -60,18 +116,36 @@
         bottom: -105px;
         right: 0;
         z-index: 1;
+        @media (max-width: 1024px) {
+            bottom: 20px;
+            right: 20px;
+        }
+        @media (max-width: 420px) {
+            right: 40px;
+            bottom: 60px;
+        }
         p {
             font-size: 26px;
             line-height: calc(36 / 26 * 100%);
             color: white;
             font-weight: 700;
             animation: 8s linear 0s normal none infinite running rot;
+            @media (max-width: 1024px) {
+                font-size: 14px;
+            }
+            @media (max-width: 420px) {
+                font-size: 12px;
+            }
         }
         img {
             position: absolute;
             top: 50%;
             transform: translateY(-50%) translateX(-50%);
             left: 50%;
+            @media (max-width: 1024px) {
+                width: 50px;
+                transform: translateY(-40%) translateX(-50%);
+            }
         }
     }
 }

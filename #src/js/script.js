@@ -13,6 +13,18 @@ const swiper = new Swiper('.reviews__swiper', {
 const swiper2 = new Swiper('.video-reviews__swiper', {
     direction: 'horizontal',
     slidesPerView: 'auto',
+    breakpoints: {
+        1024: {
+            spaceBetween: 0,
+        },
+        420: {
+            spaceBetween: 10,
+        },
+    },
+    pagination: {
+        el: '.video-reviews__swiper-pagination',
+        clickable: true,
+    },
 });
 
 new CircleType(document.getElementById('demo3'));

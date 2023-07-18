@@ -15,7 +15,6 @@ $maxWidthContainer: 1920;
     @include adaptiv-font(60, 37);
 }
 .text {
-    font-size: 33px;
     line-height: calc(36 / 33 * 100%);
     font-weight: 300;
     color: #2d2f30;
@@ -24,11 +23,14 @@ $maxWidthContainer: 1920;
 .btn {
     padding: 26px 85px;
     background-color: #58aee6;
-    font-size: 25px;
+    @include adaptiv-font(25, 18);
     line-height: calc(28 / 25 * 100%);
     font-weight: 700;
     color: white;
     border-radius: 40px;
+    @media (max-width: 420px) {
+        padding: 16px 65px;
+    }
 }
 
 @import './sections/intro';
