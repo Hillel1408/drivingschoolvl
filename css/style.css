@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: "CeraRoundPro";
   font-display: swap;
@@ -196,7 +196,7 @@ h6 {
 }
 @media (max-width: 420px) {
   .intro__bg img {
-    height: 360px;
+    height: 390px;
   }
 }
 .intro__block {
@@ -225,7 +225,7 @@ h6 {
 @media (max-width: 1920px) {
   .intro__bg-2 img {
     width: calc(
-                250px + 454 *
+                280px + 424 *
                     ((100vw - 420px) / 1500)
             );
   }
@@ -235,9 +235,9 @@ h6 {
     -webkit-animation: show-2 1.4s ease-in-out;
             animation: show-2 1.4s ease-in-out;
     bottom: 50%;
-    -webkit-transform: translateY(40%);
-        -ms-transform: translateY(40%);
-            transform: translateY(40%);
+    -webkit-transform: translateY(43%);
+        -ms-transform: translateY(43%);
+            transform: translateY(43%);
   }
 }
 .intro__title {
@@ -269,11 +269,19 @@ h6 {
 }
 @media (max-width: 420px) {
   .intro__title {
-    margin-bottom: 300px;
+    margin-bottom: 390px;
   }
 }
 .intro__title span {
   color: #58aee6;
+}
+.intro__title i {
+  font-style: normal;
+}
+@media (max-width: 420px) {
+  .intro__title i {
+    font-weight: 400;
+  }
 }
 .intro__title:before {
   content: url("../img/icon-7.png");
