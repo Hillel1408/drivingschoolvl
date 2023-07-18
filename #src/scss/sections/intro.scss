@@ -1,0 +1,88 @@
+.intro {
+    padding: 110px 0;
+    position: relative;
+    overflow: hidden;
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        animation: show 1.2s ease-in-out;
+        img {
+            height: 447px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__bg-2 {
+        position: absolute;
+        right: 0;
+        bottom: 120px;
+        animation: show 1.4s ease-in-out;
+    }
+    &__title {
+        font-size: 89px;
+        line-height: calc(97 / 89 * 100%);
+        color: #2d2f30;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        margin-bottom: 140px;
+        position: relative;
+        width: fit-content;
+        animation: show 1s ease-in-out;
+        span {
+            color: #58aee6;
+        }
+        &:before {
+            content: url('../img/icon-7.png');
+            position: absolute;
+            right: -160px;
+            top: -150px;
+        }
+    }
+    ul {
+        margin-bottom: 59px;
+        li {
+            font-size: 24px;
+            line-height: calc(44 / 24 * 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            &:nth-child(1) {
+                animation: show 1.6s ease-in-out;
+            }
+            &:nth-child(2) {
+                animation: show 1.8s ease-in-out;
+            }
+            &:nth-child(3) {
+                animation: show 2s ease-in-out;
+            }
+        }
+    }
+    &__btn {
+        font-size: 24px;
+        line-height: calc(28 / 24 * 100%);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        background-color: transparent;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+@keyframes show {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: none;
+    }
+}

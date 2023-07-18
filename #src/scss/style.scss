@@ -17,6 +17,16 @@
     font-weight: 300;
     color: #2d2f30;
 }
+.btn {
+    padding: 26px 85px;
+    background-color: #58aee6;
+    font-size: 25px;
+    line-height: calc(28 / 25 * 100%);
+    font-weight: 700;
+    color: white;
+    border-radius: 40px;
+}
 
+@import './sections/intro';
 @import './sections/video-reviews';
 @import './sections/reviews';

@@ -11,10 +11,10 @@
         margin-top: 50px;
         overflow: hidden;
         box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
-
         border-radius: 60px;
         &-slide {
             display: flex;
+            gap: 110px;
             padding: 165px 100px 60px 100px;
             justify-content: space-between;
             p {
