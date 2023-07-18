@@ -4,6 +4,10 @@ const swiper = new Swiper('.reviews__swiper', {
         nextEl: '.reviews__swiper-button-next',
         prevEl: '.reviews__swiper-button-prev',
     },
+    pagination: {
+        el: '.reviews__swiper-pagination',
+        clickable: true,
+    },
 });
 
 const swiper2 = new Swiper('.video-reviews__swiper', {
