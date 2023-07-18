@@ -437,7 +437,6 @@ h6 {
 .video-reviews {
   background-color: #58aee6;
   padding-top: 89px;
-  padding-bottom: 61px;
   overflow: hidden;
 }
 @media (max-width: 420px) {
@@ -548,7 +547,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin: 20px 0;
   padding: 15px 0;
   gap: 4px;
 }
@@ -582,8 +581,8 @@ h6 {
 }
 .video-reviews__icon {
   position: absolute;
-  bottom: -105px;
-  right: 0;
+  bottom: -55px;
+  right: 10px;
   z-index: 1;
 }
 @media (max-width: 1024px) {

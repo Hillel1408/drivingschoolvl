@@ -1,7 +1,6 @@
 .video-reviews {
     background-color: #58aee6;
     padding-top: 89px;
-    padding-bottom: 61px;
     overflow: hidden;
     @media (max-width: 420px) {
         padding-top: 35px;
@@ -81,7 +80,7 @@
         &-pagination {
             display: flex;
             justify-content: center;
-            margin-top: 40px;
+            margin: 20px 0;
             padding: 15px 0;
             gap: 4px;
             .swiper-pagination-bullet {
@@ -113,8 +112,8 @@
     }
     &__icon {
         position: absolute;
-        bottom: -105px;
-        right: 0;
+        bottom: -55px;
+        right: 10px;
         z-index: 1;
         @media (max-width: 1024px) {
             bottom: 20px;
