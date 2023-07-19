@@ -620,6 +620,7 @@ h6 {
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   left: 50%;
+  width: 70px;
 }
 @media (max-width: 1024px) {
   .video-reviews__icon img {
@@ -912,7 +913,7 @@ h6 {
 }
 .reviews__icon {
   position: absolute;
-  bottom: -145px;
+  bottom: -125px;
   left: 180px;
   z-index: 1;
 }
@@ -944,6 +945,7 @@ h6 {
       -ms-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
   left: 50%;
+  width: 80px;
 }
 .reviews__wrapper {
   position: relative;
