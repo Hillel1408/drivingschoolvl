@@ -602,17 +602,15 @@ h6 {
   line-height: 138.4615384615%;
   color: white;
   font-weight: 700;
-  -webkit-animation: 8s linear 0s normal none infinite running rot;
-          animation: 8s linear 0s normal none infinite running rot;
+  -webkit-animation: 24s linear 0s normal none infinite running rot;
+          animation: 24s linear 0s normal none infinite running rot;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1920px) {
   .video-reviews__icon p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 420px) {
-  .video-reviews__icon p {
-    font-size: 12px;
+    font-size: calc(
+            16px + 10 *
+                ((100vw - 420px) / 1500)
+        );
   }
 }
 .video-reviews__icon img {
@@ -928,8 +926,16 @@ h6 {
   line-height: 138.4615384615%;
   color: #2d2f30;
   font-weight: 700;
-  -webkit-animation: 8s linear 0s normal none infinite running rot;
-          animation: 8s linear 0s normal none infinite running rot;
+  -webkit-animation: 24s linear 0s normal none infinite running rot;
+          animation: 24s linear 0s normal none infinite running rot;
+}
+@media (max-width: 1920px) {
+  .reviews__icon p {
+    font-size: calc(
+            16px + 10 *
+                ((100vw - 420px) / 1500)
+        );
+  }
 }
 .reviews__icon img {
   position: absolute;
