@@ -192,24 +192,25 @@
     }
     &__icon {
         position: absolute;
-        bottom: -185px;
+        bottom: -125px;
         left: 180px;
         z-index: 1;
         @media (max-width: 1420px) {
             display: none;
         }
         p {
-            font-size: 26px;
+            @include adaptiv-font(20, 16);
             line-height: calc(36 / 26 * 100%);
             color: #2d2f30;
             font-weight: 700;
-            animation: 8s linear 0s normal none infinite running rot;
+            animation: 24s linear 0s normal none infinite running rot;
         }
         img {
             position: absolute;
             top: 50%;
             transform: translateY(-50%) translateX(-50%);
             left: 50%;
+            width: 80px;
         }
     }
     &__wrapper {

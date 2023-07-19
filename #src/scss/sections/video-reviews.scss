@@ -95,7 +95,6 @@
                     &:before {
                         content: url('../img/icon-10.png');
                         position: absolute;
-
                         top: 50%;
                         left: 50%;
                         transform: translateY(-42%) translateX(-50%);
@@ -112,7 +111,7 @@
     }
     &__icon {
         position: absolute;
-        bottom: -55px;
+        bottom: -35px;
         right: 10px;
         z-index: 1;
         @media (max-width: 1024px) {
@@ -124,23 +123,18 @@
             bottom: 60px;
         }
         p {
-            font-size: 26px;
+            @include adaptiv-font(20, 16);
             line-height: calc(36 / 26 * 100%);
             color: white;
             font-weight: 700;
-            animation: 8s linear 0s normal none infinite running rot;
-            @media (max-width: 1024px) {
-                font-size: 14px;
-            }
-            @media (max-width: 420px) {
-                font-size: 12px;
-            }
+            animation: 24s linear 0s normal none infinite running rot;
         }
         img {
             position: absolute;
             top: 50%;
             transform: translateY(-50%) translateX(-50%);
             left: 50%;
+            width: 70px;
             @media (max-width: 1024px) {
                 width: 50px;
                 transform: translateY(-40%) translateX(-50%);
