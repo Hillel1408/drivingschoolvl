@@ -581,7 +581,7 @@ h6 {
 }
 .video-reviews__icon {
   position: absolute;
-  bottom: -55px;
+  bottom: -35px;
   right: 10px;
   z-index: 1;
 }
@@ -598,7 +598,7 @@ h6 {
   }
 }
 .video-reviews__icon p {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 138.4615384615%;
   color: white;
   font-weight: 700;
@@ -608,7 +608,7 @@ h6 {
 @media (max-width: 1920px) {
   .video-reviews__icon p {
     font-size: calc(
-            16px + 10 *
+            16px + 4 *
                 ((100vw - 420px) / 1500)
         );
   }
@@ -912,7 +912,7 @@ h6 {
 }
 .reviews__icon {
   position: absolute;
-  bottom: -185px;
+  bottom: -145px;
   left: 180px;
   z-index: 1;
 }
@@ -922,7 +922,7 @@ h6 {
   }
 }
 .reviews__icon p {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 138.4615384615%;
   color: #2d2f30;
   font-weight: 700;
@@ -932,7 +932,7 @@ h6 {
 @media (max-width: 1920px) {
   .reviews__icon p {
     font-size: calc(
-            16px + 10 *
+            16px + 4 *
                 ((100vw - 420px) / 1500)
         );
   }
