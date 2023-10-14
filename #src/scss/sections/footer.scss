@@ -137,6 +137,7 @@
   }
   &__ribbon {
     background-color: white;
+
     margin-left: -160px;
     margin-right: -160px;
     font-size: 24px;
@@ -149,10 +150,11 @@
     z-index: 10;
     & > div {
       display: flex;
+      padding-left: 70px;
       white-space: nowrap;
       gap: 70px;
       text-transform: uppercase;
-      animation: 200s linear infinite running line;
+      animation: 90s linear infinite running line;
       @media (max-width: 768px) {
         gap: 30px;
       }
@@ -204,6 +206,6 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-1000%, 0);
+    transform: translate(-500%, 0);
   }
 }
