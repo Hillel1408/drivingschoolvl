@@ -1201,8 +1201,8 @@ h6 {
   white-space: nowrap;
   gap: 70px;
   text-transform: uppercase;
-  -webkit-animation: 200s linear infinite running line;
-          animation: 200s linear infinite running line;
+  -webkit-animation: 20s linear infinite running line;
+          animation: 20s linear infinite running line;
 }
 @media (max-width: 768px) {
   .footer__ribbon > div {
@@ -1265,8 +1265,8 @@ h6 {
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(-1000%, 0);
-            transform: translate(-1000%, 0);
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
 }
 
@@ -1276,7 +1276,7 @@ h6 {
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(-1000%, 0);
-            transform: translate(-1000%, 0);
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
 }
