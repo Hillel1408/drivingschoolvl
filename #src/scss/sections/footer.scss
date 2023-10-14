@@ -177,12 +177,24 @@
     left: 50%;
     top: 100px;
     transform: translateX(-50%);
+    &.mobile {
+      display: none;
+    }
     @media (max-width: 768px) {
+      &.mobile {
+        display: block;
+        width: 377px;
+      }
+      &.desktop {
+        display: none;
+      }
       margin-top: -220px;
     }
     @media (max-width: 480px) {
-      width: 200px;
-      margin-top: -170px;
+      &.mobile {
+        width: 200px;
+        margin-top: -170px;
+      }
     }
   }
 }

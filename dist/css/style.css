@@ -1237,13 +1237,23 @@ h6 {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.footer__logo.mobile {
+  display: none;
+}
 @media (max-width: 768px) {
   .footer__logo {
     margin-top: -220px;
   }
+  .footer__logo.mobile {
+    display: block;
+    width: 377px;
+  }
+  .footer__logo.desktop {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
-  .footer__logo {
+  .footer__logo.mobile {
     width: 200px;
     margin-top: -170px;
   }
