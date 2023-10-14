@@ -1,38 +1,39 @@
-@import 'fonts';
-@import 'null';
-@import 'mixins';
+@import "fonts";
+@import "null";
+@import "mixins";
 
 $maxWidthContainer: 1920;
 
 .container {
-    max-width: 1950px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1950px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .title {
-    font-weight: 700;
-    color: #2d2f30;
-    @include adaptiv-font(60, 37);
+  font-weight: 700;
+  color: #2d2f30;
+  @include adaptiv-font(60, 37);
 }
 .text {
-    line-height: calc(36 / 33 * 100%);
-    font-weight: 300;
-    color: #2d2f30;
-    @include adaptiv-font(33, 20);
+  line-height: calc(36 / 33 * 100%);
+  font-weight: 300;
+  color: #2d2f30;
+  @include adaptiv-font(33, 20);
 }
 .btn {
-    padding: 26px 85px;
-    background-color: #58aee6;
-    @include adaptiv-font(25, 18);
-    line-height: calc(28 / 25 * 100%);
-    font-weight: 700;
-    color: white;
-    border-radius: 40px;
-    @media (max-width: 420px) {
-        padding: 16px 65px;
-    }
+  padding: 26px 85px;
+  background-color: #58aee6;
+  @include adaptiv-font(25, 18);
+  line-height: calc(28 / 25 * 100%);
+  font-weight: 700;
+  color: white;
+  border-radius: 40px;
+  @media (max-width: 420px) {
+    padding: 16px 65px;
+  }
 }
 
-@import './sections/intro';
-@import './sections/video-reviews';
-@import './sections/reviews';
+@import "./sections/intro";
+@import "./sections/video-reviews";
+@import "./sections/reviews";
+@import "./sections/footer";
