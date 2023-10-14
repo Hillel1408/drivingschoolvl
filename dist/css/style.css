@@ -997,7 +997,7 @@ h6 {
           transform: skewY(2deg);
   width: 90%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 100px;
   padding-left: 160px;
   padding-right: 160px;
@@ -1012,13 +1012,18 @@ h6 {
 }
 @media (max-width: 768px) {
   .footer__block {
-    padding-top: 0;
     width: 100%;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__block {
+    padding-top: 60px;
   }
 }
 .footer__wrapper {
@@ -1041,14 +1046,18 @@ h6 {
   padding: 20px 70px 20px 30px;
   border-radius: 90px;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 110px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 10px;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (max-width: 768px) {
   .footer__tel {
@@ -1061,6 +1070,10 @@ h6 {
     font-size: 26px;
     padding: 20px;
   }
+}
+.footer__tel:hover {
+  background-color: white;
+  color: #61c3ff;
 }
 .footer__grid {
   display: -ms-grid;
@@ -1188,8 +1201,8 @@ h6 {
   white-space: nowrap;
   gap: 70px;
   text-transform: uppercase;
-  -webkit-animation: 8s linear infinite running line;
-          animation: 8s linear infinite running line;
+  -webkit-animation: 200s linear infinite running line;
+          animation: 200s linear infinite running line;
 }
 @media (max-width: 768px) {
   .footer__ribbon > div {
@@ -1216,39 +1229,44 @@ h6 {
   }
 }
 .footer__logo {
-  margin-bottom: 20px;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: 100px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 @media (max-width: 768px) {
   .footer__logo {
-    margin-top: -120px;
-    margin-bottom: 50px;
+    margin-top: -220px;
   }
 }
 @media (max-width: 480px) {
   .footer__logo {
     width: 200px;
-    margin-top: -70px;
+    margin-top: -170px;
   }
 }
 
 @-webkit-keyframes line {
   0% {
-    -webkit-transform: translate3d(-25%, 0, 0);
-            transform: translate3d(-25%, 0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate(-1000%, 0);
+            transform: translate(-1000%, 0);
   }
 }
 
 @keyframes line {
   0% {
-    -webkit-transform: translate3d(-25%, 0, 0);
-            transform: translate3d(-25%, 0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-            transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate(-1000%, 0);
+            transform: translate(-1000%, 0);
   }
 }
