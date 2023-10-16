@@ -110,6 +110,7 @@
     gap: 70px;
     align-items: center;
     border-top: 2px solid white;
+    margin-bottom: 30px;
     @media (max-width: 768px) {
       flex-direction: column;
       gap: 30px;
@@ -137,7 +138,6 @@
   }
   &__ribbon {
     background-color: white;
-
     margin-left: -160px;
     margin-right: -160px;
     font-size: 24px;
@@ -198,6 +198,10 @@
         margin-top: -170px;
       }
     }
+  }
+  &__text-2 {
+    font-size: 22px;
+    color: white;
   }
 }
 

@@ -1147,6 +1147,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   border-top: 2px solid white;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .footer__bottom {
@@ -1258,6 +1259,10 @@ h6 {
     width: 200px;
     margin-top: -170px;
   }
+}
+.footer__text-2 {
+  font-size: 22px;
+  color: white;
 }
 
 @-webkit-keyframes line {
