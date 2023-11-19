@@ -114,7 +114,7 @@ const elDays1 = document.querySelector(".timer__days");
 const elHours1 = document.querySelector(".timer__hours");
 const elMinutes1 = document.querySelector(".timer__minutes");
 const elSeconds1 = document.querySelector(".timer__seconds");
-const deadline1 = new Date(Date.now() + (60 * 60 * 60 * 1000 + 999));
+const deadline1 = new Date(Date.now() + 30 * 60 * 60 * 1000);
 new CountdownTimer(
   deadline1,
   (timer) => {
