@@ -1492,6 +1492,7 @@ h6 {
 @media (max-width: 480px) {
   .promotion__img.mobile {
     display: block;
+    margin-top: 30px;
   }
 }
 
@@ -1552,16 +1553,29 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.timer > div span {
+.timer > div > div {
+  position: relative;
+}
+.timer > div > div::before {
+  content: attr(data-title);
+  display: block;
   font-size: 30px;
   letter-spacing: 6px;
   font-family: "Acherus", serif;
   font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
 }
 @media (max-width: 480px) {
-  .timer > div span {
+  .timer > div > div::before {
     font-size: 22px;
     letter-spacing: 4.4px;
+    -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+            transform: translateY(40px);
   }
 }
 @media (max-width: 1024px) {
